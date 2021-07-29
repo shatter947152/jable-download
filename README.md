@@ -1,3 +1,5 @@
+只支持window
+
 `jable-chrome-extensions`是chrome 插件
 
 chrome 地址栏输入：chrome://extensions/
