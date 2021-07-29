@@ -16,3 +16,5 @@ chrome 打开 https://jable.tv/videos/xx/ 播放页面
 
 现版本默认下载到 `C:\Users\Public\Downloads`
 
+[主下载程序](https://github.com/nilaoda/N_m3u8DL-CLI)
+
