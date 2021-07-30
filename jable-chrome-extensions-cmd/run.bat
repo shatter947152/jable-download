@@ -1,8 +1,3 @@
-chcp 936
-@REM chcp 65001
-@REM 936	GB2312
-@REM 20127	US-ASCII
-@REM 65001	UTF-8
 @echo off
 Setlocal enabledelayedexpansion
 
