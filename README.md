@@ -24,5 +24,5 @@ chrome 打开 https://jable.tv/videos/xx/ 播放页面
 点击标题后面 `[下载]`,调用下载程序，
 
 现版本默认下载到 `C:\Users\Public\Downloads`,
-可通过修改`init.bat`文件中的`savepath`参数，更换默认下载地址
+可通过修改`run.bat`文件中的`savepath`参数，更换默认下载地址
 
