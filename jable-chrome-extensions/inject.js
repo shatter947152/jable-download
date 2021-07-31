@@ -323,8 +323,8 @@ console.clear()
     // 读取注入的配置
 let settingStr = document.getElementById('ex-settings').value;
 let settingsObj = JSON.parse(settingStr);
-
-// 如果配置了下载目录
+settingsObj.workDir = settingsObj.workDir || 'C:\\Users\\Public\\Desktop'
+    // 如果配置了下载目录
 if (settingsObj.workDir) {
 
     // hlsUrl 是 m3u8地址
