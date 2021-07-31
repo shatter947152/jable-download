@@ -1,4 +1,4 @@
-### 1.1 说明
+# 说明
 为了方便下载jable
 `jable-chrome-extensions`是chrome 插件
 
@@ -8,7 +8,7 @@
 `注册一个协议` --> `chrome插件生成一个下载链接` --> `点击链接执行 run.bat` --> `调用N_m3u8DL-CLI开始下载`
 
 
-### 2.0 安装 
+# 安装 
 
 `chrome` 地址栏输入：chrome://extensions/
 
@@ -18,11 +18,16 @@
 
 右击 `init.bat`,以管理员身份运行，向注册表添加一个协议注册
 
-### 3.0 使用
+# 使用
+
+chrome浏览器中，点击扩展图标 -> 选项，填写默认下载目录，点保存
+
+![setting1](img/setting_1.png)
+![setting2](img/setting_2.png)
+
+
 chrome 打开 https://jable.tv/videos/xx/ 播放页面
 
 点击标题后面 `[下载]`,调用下载程序，
 
-现版本默认下载到 `C:\Users\Public\Downloads`,
-可通过修改`run.bat`文件中的`savepath`参数，更换默认下载地址
 
