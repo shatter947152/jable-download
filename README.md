@@ -25,6 +25,9 @@ chrome浏览器中，点击扩展图标 -> 选项，填写默认下载目录，�
 ![setting1](img/setting_1.png)
 ![setting2](img/setting_2.png)
 
+**如果未设置下载目录，默认下载到 `C:\Users\Public\Desktop`**
+
+
 
 chrome 打开 https://jable.tv/videos/xx/ 播放页面
 
