@@ -10,6 +10,9 @@
 		"48": "./favicon.ico",
 		"128": "./favicon.ico"
 	},
+	"permissions": [
+		"storage"
+	],
 	"content_scripts": 
 	[
 		{
@@ -19,6 +22,7 @@
 			"js": ["content-script.js"]
 		}
 	],
+	"options_page": "settings.html",
 	"web_accessible_resources":[
 		"inject.js"
 	],
