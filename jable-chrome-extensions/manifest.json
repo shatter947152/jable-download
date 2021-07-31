@@ -6,9 +6,9 @@
 	"author": "Halo",
 	"icons":
 	{
-		"16":"./favicon.ico",
-		"48": "./favicon.ico",
-		"128": "./favicon.ico"
+		"16":"./icon_128.png",
+		"48": "./icon_128.png",
+		"128": "./icon_128.png"
 	},
 	"permissions": [
 		"storage"
