@@ -4,36 +4,14 @@ s.src = chrome.runtime.getURL('inject.js');
 s.onload = function() { this.remove(); };
 (document.head || document.documentElement).appendChild(s);
 
-
-
 console.log('contents-script.js');
-
+// 把配置注入到原网页中
 chrome.storage.local.get(function(settingsObj) {
-    inputDom = document.createElement('input');
-    inputDom.id = 'ex-settings';
-    inputDom.type = 'hidden';
-    inputDom.value = JSON.stringify(settingsObj);
-    (document.head || document.documentElement).appendChild(inputDom);
+    settingsObj.workDir = settingsObj.workDir || 'C:\\Users\\Public\\Desktop'
+    let settingsJsonStr = JSON.stringify(settingsObj);
+    // 生成 script 直接注入代码，把settings注入到原网页
+    var script_tag = document.createElement('script');
+    script_tag.type = 'text/javascript';
+    script_tag.text = `var settings=${settingsJsonStr};`;
+    document.body.appendChild(script_tag);
 });
-
-
-
-// function Func() {
-//     return new Promise((resolve, reject) => {
-//         window.addEventListener("message", function(e) {
-//             resolve(e)
-//         }, false);
-//     })
-// }
-
-// Func().then(res => {
-//     // console.log('content then');
-//     // console.log(res.data);
-//     chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-//         // console.log('content-script addListener');
-//         // console.log(request);
-//         // console.log(sender);
-//         // console.log(res.data);
-//         sendResponse(res.data);
-//     });
-// })

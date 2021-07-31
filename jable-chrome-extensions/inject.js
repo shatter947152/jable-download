@@ -320,12 +320,9 @@
 
 
 console.clear()
-    // 读取注入的配置
-let settingStr = document.getElementById('ex-settings').value;
-let settingsObj = JSON.parse(settingStr);
-settingsObj.workDir = settingsObj.workDir || 'C:\\Users\\Public\\Desktop'
-    // 如果配置了下载目录
-if (settingsObj.workDir) {
+console.log(settings);
+// 如果配置了下载目录
+if (settings.workDir) {
 
     // hlsUrl 是 m3u8地址
 
@@ -337,7 +334,7 @@ if (settingsObj.workDir) {
     // 协议名
     let ProtocolName = 'M3U8dl';
     // 下载参数
-    let M3U8dlProtocolParam = `${hlsUrl} --saveName "${title}" --workDir "${settingsObj.workDir}" --enableDelAfterDone --disableDateInfo --x `;
+    let M3U8dlProtocolParam = `${hlsUrl} --saveName "${title}" --workDir "${settings.workDir}" --enableDelAfterDone --disableDateInfo --x `;
     console.log(M3U8dlProtocolParam);
     // 参数转 Base64
     let b64Param = Base64.encode(M3U8dlProtocolParam);
