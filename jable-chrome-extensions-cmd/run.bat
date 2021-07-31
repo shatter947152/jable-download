@@ -7,7 +7,7 @@ set currPath=%~dp0
 @REM 接收参数
 set param=%1
 @REM 参数截取
-set param=%param:~10,-1%
+set param=%param:~10,-2%
 @REM base64解码
 for /f "tokens=* delims=" %%# in ('%currPath%\base64.bat -decode %param%') do set "param=%%#"
 @REM 调起下载程序

@@ -337,11 +337,11 @@ if (settingsObj.workDir) {
     // 协议名
     let ProtocolName = 'M3U8dl';
     // 下载参数
-    let M3U8dlProtocolParam = `${hlsUrl} --saveName "${title}" --workDir "${settingsObj.workDir}" --enableDelAfterDone --disableDateInfo`;
-    // console.log(M3U8dlProtocolParam);
+    let M3U8dlProtocolParam = `${hlsUrl} --saveName "${title}" --workDir "${settingsObj.workDir}" --enableDelAfterDone --disableDateInfo --x `;
+    console.log(M3U8dlProtocolParam);
     // 参数转 Base64
     let b64Param = Base64.encode(M3U8dlProtocolParam);
-    // console.log(b64Param);
+    console.log(b64Param);
 
     // 生成下载按钮
     let _downloadLinkTag = `<a href='${ProtocolName}://${b64Param}'> [ 下载 ] </a>`;
