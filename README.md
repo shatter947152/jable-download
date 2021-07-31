@@ -1,10 +1,11 @@
 # 说明
-为了方便下载jable
+这是一个方便下载jable的小工具
+
 `jable-chrome-extensions`是chrome 插件
 
 `jable-chrome-extensions-cmd` 是依赖程序，借用了 [N_m3u8DL-CLI](https://github.com/nilaoda/N_m3u8DL-CLI)实现下载`m3u8`，合并成 `mp4`功能
 
-#### 1.2 流程
+#### 实现流程
 `注册一个协议` --> `chrome插件生成一个下载链接` --> `点击链接执行 run.bat` --> `调用N_m3u8DL-CLI开始下载`
 
 
@@ -16,7 +17,7 @@
 
 `jable-chrome-extensions-cmd`是依赖程序
 
-右击 `init.bat`,以管理员身份运行，向注册表添加一个协议注册
+右击 `init.bat`,以管理员身份运行，会向`注册表`添加一个协议注册，（杀毒软件可能会阻止，允许就行）
 
 # 使用
 
