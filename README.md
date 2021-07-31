@@ -30,4 +30,6 @@ chrome 打开 https://jable.tv/videos/xx/ 播放页面
 
 点击标题后面 `[下载]`,调用下载程序，
 
+![setting3](img/setting_3.png)
+
 
